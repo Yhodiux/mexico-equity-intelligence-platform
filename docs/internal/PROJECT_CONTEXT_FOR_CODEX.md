@@ -558,7 +558,7 @@ Fail clearly when data is missing.
 
 ## Recommended First Prompt for Codex
 
-Read `PROJECT_CONTEXT_FOR_CODEX.md` and help me implement the first local MVP step by step.
+Read `docs/internal/PROJECT_CONTEXT_FOR_CODEX.md` and help me implement the first local MVP step by step.
 
 Start only with:
 
