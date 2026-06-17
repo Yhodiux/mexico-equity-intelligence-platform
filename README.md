@@ -92,6 +92,7 @@ http://localhost:8000/docs
 - [Business Pitch](docs/business_pitch.md)
 - [Executive Summary](docs/executive_summary.md)
 - [Data Flow Architecture](docs/architecture/data_flow.md) including transformation highlights
+- [Cloud Roadmap](docs/architecture/cloud_roadmap.md)
 - [Data Products](docs/architecture/data_products.md)
 - [Demo Guide](docs/demo_guide.md)
 
