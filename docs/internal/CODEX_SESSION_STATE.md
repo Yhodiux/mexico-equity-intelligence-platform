@@ -7,7 +7,7 @@ The project currently implements the local Raw, Silver, Gold, Metadata, Data Qua
 The latest delivery-content commit is:
 
 ```text
-7f99bdb Add AWS cloud roadmap
+abd28ed Add data contracts documentation
 ```
 
 ## Implemented
@@ -29,6 +29,7 @@ The latest delivery-content commit is:
 - Architecture documentation for data flow and Gold data products.
 - Data flow documentation includes Silver and Gold transformation highlights.
 - AWS cloud roadmap documenting how to migrate the local MVP into managed cloud storage, orchestration, API serving, monitoring, security, and monetization enablement.
+- Data contracts documentation covering Raw, Silver, Gold, Metadata, API contracts, enforcement, ownership, and change management.
 - Demo guide for reviewers.
 - Executive summary with dashboard/API screenshots.
 - README demo preview section with dashboard and API screenshots.
@@ -66,6 +67,7 @@ The latest delivery-content commit is:
 - `docs/architecture/data_flow.md`
 - `docs/architecture/data_products.md`
 - `docs/architecture/cloud_roadmap.md`
+- `docs/architecture/data_contracts.md`
 - `docs/business_pitch.md`
 - `docs/demo_guide.md`
 - `docs/executive_summary.md`
@@ -166,7 +168,7 @@ git -c safe.directory=F:/Proyectos/bmv-market-intelligence-platform status --sho
 The repository was clean and synchronized with `origin/main` after the latest delivery-content push to:
 
 ```text
-7f99bdb Add AWS cloud roadmap
+abd28ed Add data contracts documentation
 ```
 
 ## API
