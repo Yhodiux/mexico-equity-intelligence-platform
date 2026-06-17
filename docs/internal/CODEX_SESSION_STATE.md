@@ -7,7 +7,7 @@ The project currently implements the local Raw, Silver, Gold, Metadata, Data Qua
 The latest delivery-content commit is:
 
 ```text
-bd9995b Move internal project notes under docs
+08a9b8e Add business pitch and monetization framing
 ```
 
 ## Implemented
@@ -30,6 +30,8 @@ bd9995b Move internal project notes under docs
 - Demo guide for reviewers.
 - Executive summary with dashboard/API screenshots.
 - README demo preview section with dashboard and API screenshots.
+- README business value and monetization strategy sections.
+- Business pitch document for remote evaluation and business-facing delivery.
 - Streamlit dashboard with Gold dataset preview, executive KPIs, performance charts, risk/volatility charts, liquidity/volume views, AI insights, and an embedded AI Agent question selector.
 - Internal project notes moved under `docs/internal/` so the repository root stays clean for reviewers.
 
@@ -58,6 +60,7 @@ bd9995b Move internal project notes under docs
 - `tests/test_api.py`
 - `docs/architecture/data_flow.md`
 - `docs/architecture/data_products.md`
+- `docs/business_pitch.md`
 - `docs/demo_guide.md`
 - `docs/executive_summary.md`
 - `docs/internal/CODEX_SESSION_STATE.md`
@@ -157,7 +160,7 @@ git -c safe.directory=F:/Proyectos/bmv-market-intelligence-platform status --sho
 The repository was clean and synchronized with `origin/main` after the latest delivery-content push to:
 
 ```text
-bd9995b Move internal project notes under docs
+08a9b8e Add business pitch and monetization framing
 ```
 
 ## API
