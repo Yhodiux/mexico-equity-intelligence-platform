@@ -8,10 +8,49 @@ The platform transforms public Mexican market data into governed, reusable, AI-r
 Public Market Data -> Raw -> Silver -> Quality -> Gold -> Metadata -> API -> AI Agent
 ```
 
+## Quick Start
+
+Run the full local pipeline:
+
+```bash
+docker compose run --rm pipeline
+```
+
+Run tests:
+
+```bash
+docker compose run --rm tests
+```
+
+Start the dashboard:
+
+```bash
+docker compose up dashboard
+```
+
+Open:
+
+```text
+http://localhost:8501
+```
+
+Start the API:
+
+```bash
+docker compose up api
+```
+
+Open:
+
+```text
+http://localhost:8000/docs
+```
+
 ## Architecture
 
 - [Data Flow Architecture](docs/architecture/data_flow.md)
 - [Data Products](docs/architecture/data_products.md)
+- [Demo Guide](docs/demo_guide.md)
 
 ## Run pipeline
 
