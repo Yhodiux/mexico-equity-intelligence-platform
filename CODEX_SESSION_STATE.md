@@ -2,7 +2,7 @@
 
 ## Current Status
 
-The project currently implements the local Raw and Silver layers for the BMV Market Intelligence Platform MVP.
+The project currently implements the local Raw, Silver, and Data Quality layers for the BMV Market Intelligence Platform MVP.
 
 ## Implemented
 
@@ -12,6 +12,8 @@ The project currently implements the local Raw and Silver layers for the BMV Mar
 - Raw Parquet output under `data/raw/`.
 - Silver transformation script.
 - Silver Parquet output under `data/silver/`.
+- Data quality validation script.
+- Data quality JSON report under `data/metadata/`.
 
 ## Important Adjustments Made
 
@@ -27,8 +29,10 @@ The project currently implements the local Raw and Silver layers for the BMV Mar
 - `config/tickers.json`
 - `src/ingestion/ingest_yfinance.py`
 - `src/transformation/build_silver.py`
+- `src/quality/validate_data_quality.py`
 - `data/raw/market_prices_raw.parquet`
 - `data/silver/market_prices_silver.parquet`
+- `data/metadata/data_quality_report.json`
 
 ## Reproduce Current Pipeline
 
@@ -40,6 +44,7 @@ The pipeline now executes:
 
 1. `python src/ingestion/ingest_yfinance.py`
 2. `python src/transformation/build_silver.py`
+3. `python src/quality/validate_data_quality.py`
 
 ## Last Successful Validation
 
@@ -74,15 +79,10 @@ The repository currently appears mostly untracked from Git's perspective in this
 
 ## Recommended Next Step
 
-Implement Data Quality:
+Implement Gold datasets:
 
-- Validate Raw row count greater than zero.
-- Validate Silver row count greater than zero.
-- Check no null `ticker`.
-- Check no null `date`.
-- Check no duplicate `ticker` + `date`.
-- Check prices are greater than or equal to zero.
-- Check volume is greater than or equal to zero.
-- Check `high_price >= low_price`.
-- Check `close_price` is between `low_price` and `high_price` when possible.
-- Write report to `data/metadata/data_quality_report.json`.
+- `gold_performance`
+- `gold_volatility`
+- `gold_liquidity`
+- `gold_market_trends`
+- `gold_ai_insights`

@@ -1,0 +1,219 @@
+{
+  "generated_at": "2026-06-17T12:10:37.721155+00:00",
+  "status": "passed",
+  "summary": {
+    "total_checks": 15,
+    "passed_checks": 15,
+    "failed_checks": 0
+  },
+  "datasets": {
+    "raw": {
+      "record_count": 12570,
+      "column_count": 8,
+      "columns": [
+        "date",
+        "ticker",
+        "open",
+        "high",
+        "low",
+        "close",
+        "adj_close",
+        "volume"
+      ]
+    },
+    "silver": {
+      "record_count": 12570,
+      "column_count": 16,
+      "columns": [
+        "date",
+        "ticker",
+        "open_price",
+        "high_price",
+        "low_price",
+        "close_price",
+        "adjusted_close",
+        "volume",
+        "daily_return",
+        "intraday_volatility",
+        "price_range",
+        "volume_category",
+        "trend_flag",
+        "issuer_name",
+        "sector",
+        "ingestion_timestamp"
+      ]
+    }
+  },
+  "checks": [
+    {
+      "name": "raw_row_count_greater_than_zero",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "row_count": 12570
+      }
+    },
+    {
+      "name": "silver_row_count_greater_than_zero",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "row_count": 12570
+      }
+    },
+    {
+      "name": "raw_required_columns_present",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "required_columns": [
+          "adj_close",
+          "close",
+          "date",
+          "high",
+          "low",
+          "open",
+          "ticker",
+          "volume"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "name": "silver_required_columns_present",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "required_columns": [
+          "adjusted_close",
+          "close_price",
+          "daily_return",
+          "date",
+          "high_price",
+          "ingestion_timestamp",
+          "intraday_volatility",
+          "issuer_name",
+          "low_price",
+          "open_price",
+          "price_range",
+          "sector",
+          "ticker",
+          "trend_flag",
+          "volume",
+          "volume_category"
+        ],
+        "missing_columns": []
+      }
+    },
+    {
+      "name": "silver_ticker_not_null",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "ticker",
+        "null_count": 0
+      }
+    },
+    {
+      "name": "silver_date_not_null",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "date",
+        "null_count": 0
+      }
+    },
+    {
+      "name": "silver_ticker_date_unique",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "columns": [
+          "ticker",
+          "date"
+        ],
+        "duplicate_row_count": 0,
+        "sample_duplicates": []
+      }
+    },
+    {
+      "name": "silver_open_price_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "open_price",
+        "invalid_count": 0,
+        "min_value": 6.599999904632568
+      }
+    },
+    {
+      "name": "silver_high_price_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "high_price",
+        "invalid_count": 0,
+        "min_value": 6.78000020980835
+      }
+    },
+    {
+      "name": "silver_low_price_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "low_price",
+        "invalid_count": 0,
+        "min_value": 6.480000019073486
+      }
+    },
+    {
+      "name": "silver_close_price_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "close_price",
+        "invalid_count": 0,
+        "min_value": 6.5
+      }
+    },
+    {
+      "name": "silver_adjusted_close_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "adjusted_close",
+        "invalid_count": 0,
+        "min_value": 6.322948455810547
+      }
+    },
+    {
+      "name": "silver_volume_non_negative",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "column": "volume",
+        "invalid_count": 0,
+        "min_value": 0.0
+      }
+    },
+    {
+      "name": "silver_high_price_greater_or_equal_low_price",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "invalid_count": 0,
+        "sample_invalid_rows": []
+      }
+    },
+    {
+      "name": "silver_close_price_between_low_price_and_high_price",
+      "passed": true,
+      "severity": "critical",
+      "details": {
+        "checked_count": 12570,
+        "invalid_count": 0,
+        "sample_invalid_rows": []
+      }
+    }
+  ]
+}

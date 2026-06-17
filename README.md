@@ -4,7 +4,7 @@ Local data engineering MVP for Mexican market intelligence data products.
 
 ## Run pipeline
 
-This first step downloads daily historical prices from Yahoo Finance, writes raw Parquet files under `data/raw/`, and builds the standardized Silver dataset under `data/silver/`.
+This first step downloads daily historical prices from Yahoo Finance, writes raw Parquet files under `data/raw/`, builds the standardized Silver dataset under `data/silver/`, and writes a data quality report under `data/metadata/`.
 
 ```bash
 docker compose run --rm pipeline

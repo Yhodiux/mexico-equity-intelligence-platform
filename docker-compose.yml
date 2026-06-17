@@ -7,4 +7,5 @@ services:
     command: >
       sh -c "pip install --no-cache-dir -r requirements.txt &&
              python src/ingestion/ingest_yfinance.py &&
-             python src/transformation/build_silver.py"
+             python src/transformation/build_silver.py &&
+             python src/quality/validate_data_quality.py"
