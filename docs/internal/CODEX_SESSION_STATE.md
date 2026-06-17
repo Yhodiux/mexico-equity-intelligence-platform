@@ -219,7 +219,24 @@ docker compose run --rm tests
 
 ## Final Delivery Status
 
-The project is ready to be sent by repository link.
+The project is ready to be sent by repository link and is ready for external tester validation.
+
+Recommended tester validation:
+
+```text
+git clone https://github.com/Yhodiux/bmv-market-intelligence-platform.git
+cd bmv-market-intelligence-platform
+docker compose run --rm pipeline
+docker compose run --rm tests
+docker compose up dashboard
+```
+
+Expected tester outcome:
+
+- Pipeline completes without errors.
+- Tests return `9 passed`.
+- Dashboard opens at `http://localhost:8501`.
+- Optional API opens at `http://localhost:8000/docs`.
 
 Recommended delivery message:
 
