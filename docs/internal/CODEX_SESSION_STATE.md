@@ -7,7 +7,7 @@ The project currently implements the local Raw, Silver, Gold, Metadata, Data Qua
 The latest delivery-content commit is:
 
 ```text
-6ca6959 Add prerequisite installation links
+1a31f33 Document transformation highlights
 ```
 
 ## Implemented
@@ -27,6 +27,7 @@ The latest delivery-content commit is:
 - Deterministic AI Agent endpoint grounded in Gold datasets.
 - Automated pytest suite for Gold outputs, metadata, API, and AI Agent behavior.
 - Architecture documentation for data flow and Gold data products.
+- Data flow documentation includes Silver and Gold transformation highlights.
 - Demo guide for reviewers.
 - Executive summary with dashboard/API screenshots.
 - README demo preview section with dashboard and API screenshots.
@@ -163,7 +164,7 @@ git -c safe.directory=F:/Proyectos/bmv-market-intelligence-platform status --sho
 The repository was clean and synchronized with `origin/main` after the latest delivery-content push to:
 
 ```text
-6ca6959 Add prerequisite installation links
+1a31f33 Document transformation highlights
 ```
 
 ## API
