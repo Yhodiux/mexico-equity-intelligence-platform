@@ -28,6 +28,7 @@ c1a2cec Add data quality validation layer
 - Automated pytest suite for Gold outputs, metadata, API, and AI Agent behavior.
 - Architecture documentation for data flow and Gold data products.
 - Demo guide for reviewers.
+- Executive summary with dashboard/API screenshots.
 - Streamlit dashboard with Gold dataset preview, executive KPIs, performance charts, risk/volatility charts, liquidity/volume views, AI insights, and an embedded AI Agent question selector.
 
 ## Important Adjustments Made
@@ -56,6 +57,8 @@ c1a2cec Add data quality validation layer
 - `docs/architecture/data_flow.md`
 - `docs/architecture/data_products.md`
 - `docs/demo_guide.md`
+- `docs/executive_summary.md`
+- `docs/screenshots/`
 - `src/dashboard/app.py`
 - `data/raw/market_prices_raw.parquet`
 - `data/silver/market_prices_silver.parquet`

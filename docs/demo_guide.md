@@ -87,6 +87,12 @@ Recommended dashboard review path:
 6. Review AI-ready insights.
 7. Use the embedded Market Intelligence Agent question selector.
 
+Reference screenshots:
+
+- [Dashboard overview](screenshots/dashboard_overview.png)
+- [Dashboard analytics](screenshots/dashboard_analytics.png)
+- [Dashboard AI Agent](screenshots/dashboard_ai_agent.png)
+
 Stop the dashboard with `Ctrl+C`.
 
 ## 4. Review the API
@@ -123,6 +129,11 @@ curl -X POST http://localhost:8000/ask \
   -H "Content-Type: application/json" \
   -d "{\"question\":\"Which issuers had the best 30-day performance?\"}"
 ```
+
+Reference screenshots:
+
+- [Ask best performance](screenshots/ask_best_performance.png)
+- [Ask guardrail](screenshots/ask_guardrail.png)
 
 Stop the API with `Ctrl+C`.
 

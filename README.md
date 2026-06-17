@@ -48,6 +48,7 @@ http://localhost:8000/docs
 
 ## Architecture
 
+- [Executive Summary](docs/executive_summary.md)
 - [Data Flow Architecture](docs/architecture/data_flow.md)
 - [Data Products](docs/architecture/data_products.md)
 - [Demo Guide](docs/demo_guide.md)
