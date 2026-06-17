@@ -35,8 +35,8 @@ The commercial idea is simple: the value is not the raw price history; the value
 
 ## Prerequisites
 
-- Docker Desktop
-- Docker Compose
+- [Git](https://git-scm.com/downloads/) to clone the repository
+- [Docker Desktop](https://www.docker.com/products/docker-desktop/) with Docker Compose
 - Internet access for Yahoo Finance downloads
 - Available local ports: `8000` for the API and `8501` for the dashboard
 
