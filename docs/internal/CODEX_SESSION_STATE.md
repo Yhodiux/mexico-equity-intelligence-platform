@@ -7,7 +7,7 @@ The project currently implements the local Raw, Silver, Gold, Metadata, Data Qua
 The latest delivery-content commit is:
 
 ```text
-772ff80 Clarify quick start project directory
+6ca6959 Add prerequisite installation links
 ```
 
 ## Implemented
@@ -32,6 +32,7 @@ The latest delivery-content commit is:
 - README demo preview section with dashboard and API screenshots.
 - README business value and monetization strategy sections.
 - README prerequisites section for external local execution.
+- README prerequisites include official Git and Docker Desktop installation links.
 - README Quick Start includes `git clone` and `cd bmv-market-intelligence-platform` before Docker commands.
 - Business pitch document for remote evaluation and business-facing delivery.
 - Streamlit dashboard with Gold dataset preview, executive KPIs, performance charts, risk/volatility charts, liquidity/volume views, AI insights, and an embedded AI Agent question selector.
@@ -162,7 +163,7 @@ git -c safe.directory=F:/Proyectos/bmv-market-intelligence-platform status --sho
 The repository was clean and synchronized with `origin/main` after the latest delivery-content push to:
 
 ```text
-772ff80 Clarify quick start project directory
+6ca6959 Add prerequisite installation links
 ```
 
 ## API
