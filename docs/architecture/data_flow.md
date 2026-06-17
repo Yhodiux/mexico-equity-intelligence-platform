@@ -10,6 +10,18 @@ The platform demonstrates the full chain:
 Public Market Data -> Raw -> Silver -> Quality -> Gold -> Metadata -> API -> AI Agent
 ```
 
+```mermaid
+flowchart LR
+    Source[Public Market Data] --> Raw[Raw Zone]
+    Raw --> Silver[Silver Zone]
+    Silver --> Quality[Data Quality Gate]
+    Quality --> Gold[Gold Data Products]
+    Gold --> Metadata[Metadata Catalog]
+    Gold --> API[FastAPI]
+    Gold --> Dashboard[Streamlit Dashboard]
+    Gold --> Agent[AI Agent]
+```
+
 ## Scope
 
 This MVP does not use BMV Web Services because those services require commercial access, credentials, controlled connectivity, and authorization processes that would make the assessment harder to reproduce.
