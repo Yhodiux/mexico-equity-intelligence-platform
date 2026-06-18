@@ -1,10 +1,21 @@
 # BMV Market Intelligence Platform
 
-Local data engineering and AI MVP for Mexican Market Intelligence data products.
+Transforming public market data into AI-ready data products for Market Intelligence and data monetization.
 
-The platform transforms public market data into AI-ready data products for Market Intelligence and data monetization.
+Local Data Engineering and AI MVP for Mexican Market Intelligence data products.
 
-This is not a trading system, price prediction platform, investment recommender, or forecasting product. The goal is to convert public market observations into governed information products that can be distributed through APIs, dashboards, reports, and controlled natural-language interfaces.
+---
+
+## Project Vision
+
+This platform demonstrates how public market data can be transformed into AI-ready data products through Data Engineering, Market Intelligence and Artificial Intelligence.
+
+The focus is on converting market observations into governed information products that can be delivered through APIs, dashboards, reports and controlled AI services.
+
+The goal is to enable Market Intelligence and data monetization through reusable and AI-ready data products.
+
+---
+
 
 ```text
 Public Market Data -> Raw -> Silver -> Quality -> Gold -> Metadata -> API -> Governed AI Agent
