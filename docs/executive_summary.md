@@ -22,6 +22,10 @@ Public market data is useful, but raw prices alone are not a monetizable product
 - Sector and issuer trend discovery
 - AI-ready insights grounded in governed datasets
 
+From a stock exchange or financial data provider perspective, this is the core business idea: market activity becomes more valuable when it is governed, packaged, distributed, and explained for specific customers. The MVP therefore demonstrates not only technical data engineering, but also how information can become a commercial product.
+
+Potential customers include issuers, brokers, analysts, fintechs, data vendors, executive teams, and issuer relations teams.
+
 ## Technical Scope
 
 The MVP implements:
@@ -160,6 +164,7 @@ docker compose up api
 - No paid BMV services or credentials required
 - Data quality checks built into the pipeline
 - Gold datasets framed as monetizable data products
+- Business framing aligned with exchange-style market data products
 - API and dashboard consume the same governed datasets
 - AI Agent is grounded, auditable, and domain-constrained
 - Automated tests validate core behavior

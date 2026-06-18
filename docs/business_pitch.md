@@ -8,6 +8,8 @@ BMV Market Intelligence Platform turns public Mexican market data into governed,
 
 Raw market prices are widely available, but they are not directly monetizable.
 
+For a stock exchange or financial data provider, the business opportunity is not only publishing prices. The commercial value comes from transforming trusted market activity into products that help customers monitor risk, compare issuers, detect liquidity changes, explain market behavior, and make faster decisions.
+
 Business users need curated answers:
 
 - Which issuers are outperforming?
@@ -50,6 +52,20 @@ This solution creates reusable data products that can support multiple commercia
 - Future integrations with licensed BMV data sources.
 
 The dashboard shows the value, but the Gold datasets and API layer are the monetizable foundation.
+
+## Exchange Business Fit
+
+The platform is aligned with how exchanges and financial information businesses create value from market data:
+
+| Business Area | Platform Fit | Commercial Value |
+| --- | --- | --- |
+| Market data distribution | Gold datasets exposed through APIs | Subscription-ready intelligence products |
+| Issuer relations | Issuer performance, sector comparison, liquidity, and trend views | Better conversations with listed companies |
+| Broker and analyst services | Ranked performance, volatility, liquidity, and unusual activity signals | Faster research workflows and differentiated insights |
+| Data vendor and fintech channels | Governed datasets with clear contracts and metadata | Reusable feeds for downstream products |
+| Executive and commercial teams | Dashboard, reports, and AI-ready summaries | Market narratives that support decisions and client engagement |
+
+This matters because a stock exchange sells trust, coverage, timeliness, governance, and interpretation. The MVP demonstrates those capabilities through reproducible data products rather than only through technical infrastructure.
 
 ## Productized Gold Datasets
 
@@ -119,6 +135,12 @@ The platform can support several paid product lines:
 | Alerting Service | Research, trading support, risk teams | Signals for volatility, volume, and performance changes |
 | Sector Intelligence Reports | Business development, sales, research | Recurring market narratives and issuer comparisons |
 | AI Market Assistant | Business users and analysts | Natural-language access to governed market intelligence |
+
+The same data foundation can also support tiering:
+
+- Basic tier: delayed market summaries and top rankings.
+- Professional tier: API access, sector dashboards, and issuer-level comparisons.
+- Enterprise tier: custom reports, alerts, entitlements, and AI assistant access.
 
 ## AI Value Proposition
 

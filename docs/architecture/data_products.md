@@ -12,6 +12,18 @@ Raw prices -> Clean signals -> Business metrics -> API products -> AI-ready answ
 
 The Gold layer is where market data becomes monetizable. Each Gold dataset is shaped around a business question that a financial analyst, market data customer, issuer relations team, or intelligence product could consume.
 
+For a stock exchange or market data business, this is the difference between data availability and revenue. Prices and volumes become more valuable when they are governed, compared, ranked, explained, distributed through APIs, and packaged for specific customer workflows.
+
+## Business Audience Mapping
+
+| Audience | Needs | Relevant Products |
+| --- | --- | --- |
+| Issuers | Understand market perception, liquidity, and sector comparison | `gold_performance`, `gold_liquidity`, `gold_market_trends` |
+| Brokers and analysts | Screen opportunities, monitor risk, and explain movement | `gold_performance`, `gold_volatility`, `gold_ai_insights` |
+| Fintechs and data vendors | Integrate reliable enriched market data | All Gold datasets through API |
+| Exchange commercial teams | Support premium data services and issuer conversations | Dashboard, reports, metadata catalog |
+| Executives | Consume concise, explainable market narratives | `gold_ai_insights`, dashboard summaries |
+
 ## Gold Products
 
 ### gold_performance
@@ -169,6 +181,20 @@ The Gold datasets can support several data product models:
 - Daily market insight reports generated from `gold_ai_insights`.
 - Premium alerting based on unusual volume, negative pressure, or high volatility.
 - Sector intelligence products for issuer relations, research, or sales teams.
+- Issuer intelligence packages that compare each listed company against sector and market behavior.
+- Enterprise tiers with API keys, entitlements, SLAs, and customer-specific reporting.
+
+## Revenue Logic
+
+The platform creates business value through repeatable information products:
+
+| Dataset | Product Logic | Revenue Opportunity |
+| --- | --- | --- |
+| `gold_performance` | Turns price history into rankings, momentum, and issuer comparison | Market summary feeds, premium dashboards, analyst subscriptions |
+| `gold_volatility` | Turns returns into risk signals | Risk intelligence products, alerts, institutional dashboards |
+| `gold_liquidity` | Turns volume into participation and unusual activity signals | Liquidity analytics, issuer relations packages, trading support tools |
+| `gold_market_trends` | Adds sector context and relative behavior | Sector intelligence reports, issuer benchmarking, executive narratives |
+| `gold_ai_insights` | Converts computed signals into explainable business language | AI assistant, automated reports, client-ready insight feeds |
 
 ## AI Grounding
 

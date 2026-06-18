@@ -12,6 +12,8 @@ Public Market Data -> Raw -> Silver -> Quality -> Gold -> Metadata -> API -> AI 
 
 This project is not only a price-data pipeline. It demonstrates how market data can be packaged as a business-ready intelligence product.
 
+The platform is framed from the point of view of a stock exchange or financial data provider: raw trades and prices are inputs, but the business sells trusted information, distribution, analytics, access, and decision support.
+
 The platform helps a market data business, exchange, issuer relations team, or financial intelligence provider:
 
 - Convert raw public market prices into reusable data products.
@@ -20,6 +22,18 @@ The platform helps a market data business, exchange, issuer relations team, or f
 - Give analysts and business users a dashboard for fast market monitoring.
 - Use an AI Agent that answers only from controlled Gold datasets, reducing hallucination risk.
 - Create a foundation for premium subscriptions, executive reports, alerts, and sector intelligence products.
+
+## Stock Exchange Business Context
+
+A stock exchange monetizes more than transactions. It can create business value by packaging market activity into products for issuers, brokers, investors, fintechs, data vendors, research teams, and internal commercial teams.
+
+This MVP shows how that information business can work:
+
+- **Issuers** can understand how their stock compares with sector behavior, liquidity, and market attention.
+- **Brokers and analysts** can consume ranked performance, risk, liquidity, and trend signals.
+- **Fintechs and data vendors** can integrate curated market intelligence through APIs.
+- **Internal exchange teams** can use dashboards and reports to support issuer relations, market development, and premium data services.
+- **Executives** can receive explainable summaries instead of raw price tables.
 
 ## Monetization Strategy
 
@@ -97,6 +111,21 @@ http://localhost:8000/docs
 - [Operational Readiness](docs/architecture/operational_readiness.md)
 - [Data Products](docs/architecture/data_products.md)
 - [Demo Guide](docs/demo_guide.md)
+
+## Review Map
+
+| Capability | Where to Review |
+| --- | --- |
+| Reproducible pipeline | `docker-compose.yml`, `src/ingestion/`, `src/transformation/`, `src/gold/` |
+| Data quality gates | `src/quality/validate_data_quality.py`, `data/metadata/data_quality_report.json` |
+| Governed data products | `data/gold/`, `docs/architecture/data_products.md` |
+| Metadata catalog | `src/metadata/build_metadata.py`, `data/metadata/datasets_metadata.json` |
+| API distribution | `src/api/main.py`, `http://localhost:8000/docs` |
+| Dashboard consumption | `src/dashboard/app.py`, `docs/screenshots/` |
+| AI guardrails | `src/ai_agent/market_agent.py`, `tests/test_market_agent.py` |
+| Operational thinking | `docs/architecture/operational_readiness.md` |
+| Cloud evolution | `docs/architecture/cloud_roadmap.md` |
+| Business monetization | `docs/business_pitch.md`, `docs/architecture/data_products.md` |
 
 ## Demo Preview
 
