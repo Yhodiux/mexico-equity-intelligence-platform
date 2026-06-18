@@ -142,6 +142,12 @@ The same data foundation can also support tiering:
 - Professional tier: API access, sector dashboards, and issuer-level comparisons.
 - Enterprise tier: custom reports, alerts, entitlements, and AI assistant access.
 
+## KPIs and OKRs
+
+The business value can be measured through data quality, freshness, product coverage, API usage, dashboard adoption, AI guardrail behavior, and customer consumption.
+
+The KPI and OKR framework is documented in [Business KPIs and OKRs](business_kpis_okrs.md). It connects the current MVP evidence to production metrics such as usage metering, subscription tiers, customer entitlements, SLAs, and monetization readiness.
+
 ## AI Value Proposition
 
 The AI Agent is intentionally constrained.

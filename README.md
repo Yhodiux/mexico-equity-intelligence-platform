@@ -110,6 +110,7 @@ http://localhost:8000/docs
 - [Data Contracts](docs/architecture/data_contracts.md)
 - [Operational Readiness](docs/architecture/operational_readiness.md)
 - [Data Products](docs/architecture/data_products.md)
+- [Business KPIs and OKRs](docs/business_kpis_okrs.md)
 - [Demo Guide](docs/demo_guide.md)
 
 ## Review Map
@@ -126,6 +127,7 @@ http://localhost:8000/docs
 | Operational thinking | `docs/architecture/operational_readiness.md` |
 | Cloud evolution | `docs/architecture/cloud_roadmap.md` |
 | Business monetization | `docs/business_pitch.md`, `docs/architecture/data_products.md` |
+| KPIs and OKRs | `docs/business_kpis_okrs.md` |
 
 ## Demo Preview
 
