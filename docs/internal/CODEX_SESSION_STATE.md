@@ -10,6 +10,12 @@ Current saved status date:
 2026-06-18 America/Mexico_City
 ```
 
+Project state captured at commit:
+
+```text
+f0d1a8f Add proprietary license notice
+```
+
 Expected Git status after saving and pushing this snapshot:
 
 ```text
@@ -52,16 +58,21 @@ main synchronized with origin/main
 - Streamlit dashboard with Gold dataset preview, executive KPIs, performance charts, risk/volatility charts, liquidity/volume views, AI insights, and an embedded AI Agent question selector.
 - Internal project notes moved under `docs/internal/` so the repository root stays clean for reviewers.
 - Project status snapshot updated for the current release candidate.
+- Docker Compose runtime startup aligned so `docker compose up` starts both API and dashboard.
+- Proprietary license notice added through `LICENSE` and README.
 
 ## Important Adjustments Made
 
 - Updated `yfinance` from `0.2.50` to `1.4.1` because the older version failed with `JSONDecodeError` against Yahoo Finance.
 - Replaced `AMXL.MX` with `AMXB.MX` because `AMXL.MX` returned no Yahoo Finance data, while `AMXB.MX` worked.
 - Updated ingestion normalization to handle the `MultiIndex` columns returned by newer `yfinance` versions.
+- Added Docker Compose `tools` profiles to `pipeline` and `tests` so `docker compose up` runs only long-lived runtime services.
+- Added a proprietary license that keeps code, documentation, data product design, and implementation details under author ownership.
 
 ## Key Files
 
 - `README.md`
+- `LICENSE`
 - `docker-compose.yml`
 - `requirements.txt`
 - `config/tickers.json`
