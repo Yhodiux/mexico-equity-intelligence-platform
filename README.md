@@ -381,3 +381,9 @@ To stop local services:
 ```bash
 docker compose down
 ```
+
+## License
+
+Copyright (c) 2026 Yhodiux. All rights reserved.
+
+This is a proprietary market intelligence platform prototype. Reuse, redistribution, commercial use, or incorporation into third-party products requires prior written permission.
