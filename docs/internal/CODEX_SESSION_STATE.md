@@ -10,10 +10,10 @@ Current saved status date:
 2026-06-18 America/Mexico_City
 ```
 
-Project state captured at commit:
+Release candidate target:
 
 ```text
-fa39cd3 Rename platform and clarify licensing
+v1.0-rc2
 ```
 
 Expected Git status after saving and pushing this snapshot:
@@ -74,12 +74,11 @@ main synchronized with origin/main
 - Added Docker Compose `tools` profiles to `pipeline` and `tests` so `docker compose up` runs only long-lived runtime services.
 - Added a proprietary license that permits viewing for evaluation and demonstration while restricting copying, modification, distribution, deployment, and commercial reuse.
 - Retained BMV references only where they describe the original assessment context, evaluated sources, unavailable commercial services, or a possible future authorized integration.
-- Updated the Git remote to `https://github.com/Yhodiux/mexico-equity-intelligence-platform.git` and verified `origin/main` at commit `fa39cd3`.
+- Updated the Git remote to `https://github.com/Yhodiux/mexico-equity-intelligence-platform.git`.
 
-## Pending Local Workspace Action
+## Local Workspace
 
-- The active local directory is still `F:/Proyectos/bmv-market-intelligence-platform` because renaming it would interrupt the current session.
-- After closing the editor, terminals, and this session, rename it to `F:/Proyectos/mexico-equity-intelligence-platform` and reopen the project from that path.
+- The active local directory is `F:/Proyectos/mexico-equity-intelligence-platform`.
 
 ## Key Files
 
@@ -275,7 +274,7 @@ La suite de pruebas queda validada con 23 tests passing.
 
 ## Current Release Notes
 
-- Recommended review tag: `v1.0-rc1`
+- Recommended review tag: `v1.0-rc2`
 - Previous stable demo tag: `v1.0-demo`
 - Current public branch: `main`
 - Current state: product and repository renamed, proprietary licensing clarified, BMV references limited to descriptive source context, synchronized with GitHub, and ready for release/tag review.

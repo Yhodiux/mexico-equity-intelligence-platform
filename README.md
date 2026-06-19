@@ -163,7 +163,7 @@ Create the API key from the OpenAI platform dashboard and make sure billing/cred
 Use the current release candidate:
 
 ```bash
-git checkout v1.0-rc1
+git checkout v1.0-rc2
 ```
 
 Then explore the platform in this order:
@@ -188,7 +188,7 @@ The expected result is a complete local market intelligence product: governed da
 - [Future AWS Architecture](docs/future_aws_architecture.md)
 - [Demo Guide](docs/demo_guide.md)
 - [Reviewer Guide](docs/reviewer_guide.md)
-- [Release Notes v1.0-demo](docs/release_notes_v1_0_demo.md)
+- [Release Notes v1.0-rc2](docs/release_notes_v1_0_rc2.md)
 - [Project Status - 2026-06-18](docs/project_status_2026_06_18.md)
 - [Data Flow Architecture](docs/architecture/data_flow.md) including transformation highlights
 - [Cloud Roadmap](docs/architecture/cloud_roadmap.md)
@@ -236,6 +236,22 @@ The project is positioned as a Market Intelligence and data monetization platfor
 | Phase 3: Forecasting models | Add Prophet, ARIMA, or LSTM experiments over governed historical datasets | Future advanced analytics capability, not current product behavior |
 | Phase 4: Anomaly detection | Detect unusual volume, volatility, liquidity, or data-quality events with statistical and ML methods | Monitoring and alerting intelligence |
 | Phase 5: Personalized recommendations | Tailor dashboards, alerts, and content by customer role, entitlement, or workflow | Product personalization, not investment advice |
+
+## Future AI Enhancements
+
+The following initiatives represent potential future extensions of the platform. They are not implemented in the current MVP and would remain grounded in governed data products, deterministic controls, and human oversight.
+
+### AI-assisted Data Quality Explanations
+
+Future versions could complement deterministic data quality validations with AI-generated explanations that contextualize anomalies and suggest possible follow-up actions for platform operators, data governance teams, and data consumers. AI would support interpretation and triage; established validation rules would remain the authoritative quality controls.
+
+### Executive Daily Market Brief Generation
+
+Governed Gold products could support AI-generated daily executive briefs summarizing observed performance, volatility, liquidity, and market trends. These briefs could evolve into premium information services and Research-as-a-Service offerings while remaining evidence-based and outside the scope of investment advice.
+
+### AI-assisted Metadata Enrichment
+
+Data products could be enriched with AI-assisted business descriptions, recommended use cases, and functional documentation to improve information discovery and consumption. Proposed metadata would remain subject to governance review and approval before publication.
 
 ## Demo Preview
 

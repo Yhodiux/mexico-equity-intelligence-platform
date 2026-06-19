@@ -4,10 +4,10 @@
 
 - Repository: `https://github.com/Yhodiux/mexico-equity-intelligence-platform`
 - Branch: `main`
-- Current reviewed commit: `fa39cd3 Rename platform and clarify licensing`
-- Recommended review tag: `v1.0-rc1`
+- Release candidate target: `v1.0-rc2`
+- Recommended review tag: `v1.0-rc2`
 - Previous stable demo tag: `v1.0-demo`
-- Local status at review time: clean and synchronized with `origin/main`
+- Local workspace: `F:/Proyectos/mexico-equity-intelligence-platform`
 
 ## Current Positioning
 
@@ -60,7 +60,7 @@ Validated locally through Docker:
 
 - README: `README.md`
 - Demo guide: `docs/demo_guide.md`
-- Release notes: `docs/release_notes_v1_0_demo.md`
+- Release notes: `docs/release_notes_v1_0_rc2.md`
 - Executive summary: `docs/executive_summary.md`
 - Business pitch: `docs/business_pitch.md`
 - Data flow architecture: `docs/architecture/data_flow.md`
@@ -75,11 +75,9 @@ Validated locally through Docker:
 - OpenAI API usage may generate costs and requires billing or credits.
 - The project runs without an OpenAI API key; `/ask-llm` returns a controlled configuration response in that mode.
 
-## Remaining Delivery Actions
+## Release Delivery
 
-- Review README visually on GitHub.
-- Rename the local workspace directory from `bmv-market-intelligence-platform` to `mexico-equity-intelligence-platform` after closing the current session.
-- Create or update the GitHub Release for `v1.0-rc1`.
-- Share the repository and `v1.0-rc1` release tag with the evaluator.
-- Share a temporary OpenAI API key separately only if required.
-- Revoke the temporary API key after review.
+- Final pipeline, automated test, API, and dashboard validation completed successfully.
+- `v1.0-rc2` is the recommended release candidate for external review.
+- Share the repository and `v1.0-rc2` release tag with the evaluator.
+- Keep all real API keys private and outside the repository.
