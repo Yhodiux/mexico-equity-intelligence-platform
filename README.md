@@ -4,13 +4,6 @@ Transforming public market data into AI-ready data products for Market Intellige
 
 Local Data Engineering and AI MVP for Mexican Market Intelligence data products.
 
-> [!IMPORTANT]
-> This independent project is not affiliated with, endorsed by, or sponsored by
-> Bolsa Mexicana de Valores, S.A.B. de C.V. or Grupo BMV. "BMV" and related
-> trademarks belong to their respective owners. The reproducible prototype uses
-> public market observations obtained through Yahoo Finance; it does not use or
-> redistribute BMV market data.
-
 ---
 
 ## Project Vision
@@ -178,6 +171,15 @@ Then explore the platform in this order:
 8. Validate guardrails with `Who won the World Cup?` and `Should I buy WALMEX.MX today?`.
 
 The expected result is a complete local market intelligence product: governed datasets, API distribution, dashboard consumption, deterministic question answering, LLM-governed narrative answers, and explicit refusal of unsupported questions.
+
+## Executive Presentation
+
+The executive presentation summarizes the business value of the platform, focusing on data products, responsible AI, consumption channels, and monetization opportunities.
+
+It is intended for business leaders, data leaders, technology stakeholders, and market intelligence teams.
+
+- **Interactive version:** [Gamma Presentation](https://gamma.app/docs/Mexico-Equity-Intelligence-Platform-m5u7z5qavr927mz)
+- **PDF version:** [Mexico Equity Intelligence Platform Presentation](docs/presentation/mexico-equity-intelligence-platform.pdf)
 
 ## Documentation
 
