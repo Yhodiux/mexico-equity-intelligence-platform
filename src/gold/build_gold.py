@@ -180,6 +180,8 @@ def severity_from_row(row: pd.Series) -> str:
 
 
 def insight_from_row(row: pd.Series) -> pd.Series:
+    # Deliberately deterministic and auditable: these rules create structured
+    # Gold evidence; the optional OpenAI layer adds grounded narrative downstream.
     issuer = row["issuer_name"]
     ticker = row["ticker"]
     return_30d = row["return_30d"]

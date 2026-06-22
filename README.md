@@ -35,6 +35,19 @@ flowchart LR
     Agent --> Users
 ```
 
+### Hybrid Insight Architecture
+
+The MVP separates analytical control from generative presentation:
+
+1. A deterministic insight engine applies explicit, auditable business rules to governed Gold metrics and produces structured insight records.
+2. The optional OpenAI layer receives structured Gold evidence and uses the model to write a grounded natural-language answer.
+
+```text
+Governed Gold metrics -> Deterministic rules -> Structured insights -> Optional OpenAI narrative
+```
+
+The deterministic layer is the authoritative analytical layer: it is reproducible, testable, and works without an OpenAI API key. The LLM does not calculate the market indicators or replace the rules; it explains and contextualizes the supplied evidence. Model-generated analytical signals, anomaly detection, and forecasting are future roadmap capabilities rather than current MVP behavior.
+
 ## Business Value
 
 This project is not a price prediction exercise. It demonstrates how market data can be packaged as business-ready Market Intelligence products.
@@ -349,10 +362,10 @@ http://localhost:8000/docs
 
 ## Ask the Governed AI Agent
 
-The platform exposes two governed AI modes:
+The platform exposes two governed query modes over the same Gold source of truth:
 
-- `/ask` is deterministic and answers supported business questions with fully auditable logic.
-- `/ask-llm` is an optional LLM-governed assistant that builds structured context from Gold datasets and uses the model only to write a natural-language answer.
+- `/ask` is a deterministic query layer that answers supported business questions with fully auditable logic; it does not call a language model.
+- `/ask-llm` is an optional LLM-governed assistant that builds structured context from Gold datasets and calls OpenAI only to write a grounded natural-language answer.
 
 Both modes reject out-of-domain questions, forecasts, price targets, and buy/sell recommendations instead of inventing unsupported answers.
 

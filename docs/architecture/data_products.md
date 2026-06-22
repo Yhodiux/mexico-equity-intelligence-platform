@@ -151,6 +151,10 @@ Purpose:
 
 Prepare concise, explainable, AI-ready insights grounded in computed market signals.
 
+Despite the dataset name, the current MVP generates these records deterministically. Explicit business rules classify governed performance, volatility, and volume metrics, then produce structured titles, summaries, interpretations, recommended questions, and severity levels. No language model is called while building `gold_ai_insights`.
+
+This is deliberate: the Gold insight product remains reproducible, testable, and auditable. The optional OpenAI layer consumes this and other Gold evidence only to generate grounded natural-language narratives. Model-generated analytical signals are outside the current MVP and remain a future roadmap capability.
+
 Main fields:
 
 ```text
@@ -201,6 +205,15 @@ The platform creates business value through repeatable information products:
 ## Governed AI Grounding
 
 The deterministic Governed AI Agent and the optional LLM-governed assistant use Gold datasets as their only source of truth.
+
+These are separate layers with separate responsibilities:
+
+```text
+Gold metrics -> Deterministic rules and query logic -> Structured evidence -> Optional OpenAI narrative
+```
+
+- The deterministic layer computes and selects the authoritative analytical evidence.
+- The OpenAI layer explains and contextualizes that evidence in natural language; it does not replace the calculations or create new market facts.
 
 This design keeps the AI behavior controlled:
 
