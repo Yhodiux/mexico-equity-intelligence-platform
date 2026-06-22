@@ -237,6 +237,18 @@ The project is positioned as a Market Intelligence and data monetization platfor
 | Phase 4: Anomaly detection | Detect unusual volume, volatility, liquidity, or data-quality events with statistical and ML methods | Monitoring and alerting intelligence |
 | Phase 5: Personalized recommendations | Tailor dashboards, alerts, and content by customer role, entitlement, or workflow | Product personalization, not investment advice |
 
+## Enterprise Production Evolution
+
+The current MVP demonstrates the governed data product foundation. A future AWS production deployment could add enterprise-grade capabilities without changing the platform's batch-oriented design:
+
+- Native AWS observability through CloudWatch Logs, Metrics, Dashboards, and Alarms.
+- Operational notifications through Amazon SNS for pipeline failures, data quality issues, stale datasets, and service incidents.
+- Secure access through IAM least-privilege roles, OAuth2/OIDC and SSO integration, role-based access control, and customer entitlements by data product.
+- Incremental and partitioned batch ingestion for efficient growth in data volume.
+- Governed semantic retrieval over approved documents and metadata as an extension of the RAG architecture.
+
+Implementation options and operational considerations are detailed in the [Cloud Roadmap](docs/architecture/cloud_roadmap.md), [Operational Readiness](docs/architecture/operational_readiness.md), and [Future AWS Architecture](docs/future_aws_architecture.md).
+
 ## Future AI Enhancements
 
 The following initiatives represent potential future extensions of the platform. They are not implemented in the current MVP and would remain grounded in governed data products, deterministic controls, and human oversight.
